@@ -176,3 +176,15 @@ body {
     transform: none;
   }
 }
+.logo-word {
+  @apply text-3xl sm:text-4xl font-black uppercase;
+  @apply tracking-[0.35em];
+  @apply bg-linear-to-br from-fuchsia-500 via-violet-500 to-blue-500;
+  @apply bg-clip-text text-transparent;
+  @apply transition-all duration-300 ease-out;
+}
+
+.group:hover .logo-word {
+  @apply brightness-125;
+  @apply group-hover:tracking-[0.42em];
+}

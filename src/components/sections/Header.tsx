@@ -5,14 +5,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b bg-background/60 backdrop-blur">
       <Container className="flex items-center justify-between py-4">
-        <a href="#" className="group flex items-center gap-3">
-          <div className="h-9 w-9 rounded-xl bg-linear-to-br from-fuchsia-500 via-violet-500 to-blue-500 transition-transform duration-200 ease-out group-hover:-rotate-2" />
-          <div className="leading-tight">
-            <div className="text-sm font-semibold">Morv</div>
-            <div className="text-xs text-muted-foreground">
-              Web • Backend (Python)
-            </div>
-          </div>
+        <a href="#" className="group select-none">
+          <span className="logo-word">MORV</span>
         </a>
 
         <nav className="flex items-center gap-1 sm:gap-2">
