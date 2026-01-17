@@ -5,6 +5,7 @@ import { Stack } from "@/components/sections/Stack";
 import { Footer } from "@/components/sections/Footer";
 import { Header } from "@/components/sections/Header";
 import { Divider } from "@/components/ui/Divider";
+import { Contact } from "@/components/sections/Contact";
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
       <Services />
 
       <Stack />
+
+      <Contact />
 
       <Footer />
     </main>

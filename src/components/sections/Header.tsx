@@ -26,14 +26,19 @@ export function Header() {
           </Button>
           <Button variant="ghost" asChild>
             <a
-              href="#services"
+              href="#stack"
               className="link-underline px-3 py-2 text-sm text-muted-foreground hover:text-foreground"
             >
               Stack
             </a>
           </Button>
-          <Button className="shadow-sm shadow-black/20" asChild>
-            <a href="#contact">Kontakt</a>
+          <Button variant="ghost" asChild>
+            <a
+              href="#contact"
+              className="link-underline px-3 py-2 text-sm text-muted-foreground hover:text-foreground"
+            >
+              Kontakt
+            </a>
           </Button>
         </nav>
       </Container>
