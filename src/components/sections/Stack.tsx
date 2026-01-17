@@ -210,7 +210,7 @@ export function Stack() {
             variants={item}
             className={[
               "group relative overflow-hidden rounded-3xl border",
-              "bg-background/40 backdrop-blur",
+              "bg-background/40 md:backdrop-blur",
               "p-4 sm:p-5",
               "transition",
               "hover:border-border/80 hover:bg-muted/20",
@@ -241,7 +241,7 @@ export function Stack() {
                     variant="outline"
                     className={[
                       "relative px-3 py-1",
-                      "border-border/40 bg-background/40 backdrop-blur",
+                      "border-border/40 bg-background/60 md:bg-background/40 md:backdrop-blur",
                       "transition",
                       "hover:-translate-y-[1px] hover:scale-[1.02]",
                       "hover:border-border/70 hover:bg-muted/30",

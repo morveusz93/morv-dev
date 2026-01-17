@@ -12,7 +12,10 @@ export function Section({ id, className, children }: Props) {
   return (
     <section id={id} className={cn("section-y", className)}>
       <Container>
-        <Reveal>{children}</Reveal>
+        <div className="md:hidden">{children}</div>
+        <div className="hidden md:block">
+          <Reveal>{children}</Reveal>
+        </div>
       </Container>
     </section>
   );
