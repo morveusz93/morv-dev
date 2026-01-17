@@ -193,8 +193,9 @@ export function Stack() {
     <Section id="stack" className="pt-0">
       <h2 className="text-2xl font-semibold tracking-tight">Tech stack</h2>
       <p className="mt-2 max-w-2xl text-muted-foreground">
-        Konkretne narzędzia, które realnie dowożą. Podział na kategorie dla
-        porządku, hover dla smaku.
+        Sprawdzony stack, większość z tych narzędzi używam na codzień w
+        produkcyjnych projektach. Pozwala skupić się na wydajności,
+        skalowalności i bezproblemowym utrzymaniu.
       </p>
 
       <motion.div
