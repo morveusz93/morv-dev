@@ -12,7 +12,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
 
-      <Container className="pt-14 md:pt-20">
+      <Container className="pt-2 md:pt-4">
         <Hero />
       </Container>
 
