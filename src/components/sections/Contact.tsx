@@ -11,29 +11,61 @@ export function Contact() {
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-2xl font-semibold tracking-tight">
-              Masz temat? Napisz — odpowiem konkretnie.
+              Porozmawiajmy o Twoim projekcie
             </h2>
             <p className="mt-2 max-w-2xl text-muted-foreground">
-              Najlepszy kontakt: mail. LinkedIn jako alternatywa.
+              Landing, backend, automatyzacja, modernizacja istniejącego
+              systemu. Napisz, czego potrzebujesz — wrócę z konkretną
+              odpowiedzią.
             </p>
           </div>
 
           <div className="flex flex-wrap gap-3">
-            <Button size="lg" asChild>
-              <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
-            </Button>
-            <Button size="lg" variant="outline" asChild>
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="link-underline"
+            <div className="flex flex-wrap gap-3">
+              <Button
+                size="lg"
+                asChild
+                className="
+      relative overflow-hidden
+      bg-linear-to-r from-fuchsia-500 to-blue-500
+      text-white
+      shadow-lg shadow-fuchsia-500/20
+      transition-all
+      hover:scale-[1.02]
+      hover:shadow-xl hover:shadow-fuchsia-500/40
+      active:scale-[0.99]
+    "
               >
-                LinkedIn
-              </a>
-            </Button>
+                <a href={`mailto:${EMAIL}`}>Napisz maila</a>
+              </Button>
+
+              <Button
+                size="lg"
+                variant="outline"
+                asChild
+                className="
+      transition-all
+      hover:scale-[1.02]
+      hover:bg-card/60
+      hover:shadow-lg
+      hover:ring-1 hover:ring-fuchsia-500/20
+      active:scale-[0.99]
+    "
+              >
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="link-underline"
+                >
+                  LinkedIn
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
+
+        <div className="mt-4 text-sm text-muted-foreground">{EMAIL}</div>
       </GlowCard>
     </Section>
   );
