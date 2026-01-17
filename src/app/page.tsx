@@ -20,7 +20,11 @@ export default function Home() {
 
       <Services />
 
+      <Divider />
+
       <Stack />
+
+      <Divider />
 
       <Contact />
 
