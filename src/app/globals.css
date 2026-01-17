@@ -145,7 +145,7 @@ body {
   transform: scaleX(1);
 }
 
-/* Scroll reveal (delikatne) */
+/* Scroll reveal */
 .reveal {
   opacity: 0;
   transform: translateY(8px);
