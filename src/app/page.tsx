@@ -6,6 +6,7 @@ import { Footer } from "@/components/sections/Footer";
 import { Header } from "@/components/sections/Header";
 import { Divider } from "@/components/ui/Divider";
 import { Contact } from "@/components/sections/Contact";
+import { SeoSection } from "@/components/sections/seo";
 
 export default function Home() {
   return (
@@ -27,6 +28,10 @@ export default function Home() {
       <Divider />
 
       <Contact />
+
+      <Divider />
+
+      <SeoSection />
 
       <Footer />
     </main>

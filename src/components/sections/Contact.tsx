@@ -3,6 +3,7 @@ import { GlowCard } from "../ui/GlowCard";
 import { Section } from "./Section";
 
 export const EMAIL = "dreamsoft.mateuszportka@gmail.com";
+export const LI = "https://www.linkedin.com/in/mateusz-portka-552b18206";
 
 export function Contact() {
   return (
@@ -53,7 +54,7 @@ export function Contact() {
     "
               >
                 <a
-                  href="https://www.linkedin.com/"
+                  href={LI}
                   target="_blank"
                   rel="noreferrer"
                   className="link-underline"
