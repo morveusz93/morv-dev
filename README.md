@@ -48,18 +48,18 @@ App runs at:
 
 http://localhost:3000
 
-Deployment
+## Deployment
 
 Optimized for deployment on Vercel, but works with any Next.js-compatible hosting.
 
 Case studies and further content will be added after the initial production release.
 
-Status
+## Status
 
 MVP / Test version
 
 Hero, CTA, and structure are intentionally frozen to collect real data before iteration.
 
-Author
+## Author
 
 Morv (DreamSoft)
