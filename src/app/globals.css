@@ -184,7 +184,7 @@ body {
 .logo-word {
   position: relative;
 
-  @apply text-5xl sm:text-5xl uppercase;
+  @apply text-2xl md:text-4xl lg:text-6xl uppercase;
   @apply tracking-[0.25em];
   @apply bg-linear-to-r from-[#ff1a8c] via-[#b84dff] to-[#00b3ff];
   @apply bg-clip-text text-transparent;

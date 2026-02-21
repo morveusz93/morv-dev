@@ -12,7 +12,7 @@ export function Header() {
           </span>
         </a>
 
-        <nav className="flex items-center gap-1 sm:gap-2">
+        <nav className="flex items-center md:gap-2">
           <Button variant="ghost" asChild>
             <a
               href="#services"
