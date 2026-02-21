@@ -28,7 +28,7 @@ export function Contact() {
                 asChild
                 className="
       relative overflow-hidden
-      bg-linear-to-r from-fuchsia-500 to-blue-500
+      bg-linear-to-r from-[#ff1a8c] via-[#b84dff] to-[#00b3ff]
       text-white
       shadow-lg shadow-fuchsia-500/20
       transition-all

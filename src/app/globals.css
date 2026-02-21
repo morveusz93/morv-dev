@@ -182,14 +182,36 @@ body {
 /* LOGO */
 
 .logo-word {
-  @apply text-3xl sm:text-4xl font-black uppercase;
-  @apply tracking-[0.35em];
-  @apply bg-linear-to-r from-[#ec4899] via-[#8b5cf6] to-[#3b82f6];
+  position: relative;
+
+  @apply text-5xl sm:text-5xl uppercase;
+  @apply tracking-[0.25em];
+  @apply bg-linear-to-r from-[#ff1a8c] via-[#b84dff] to-[#00b3ff];
   @apply bg-clip-text text-transparent;
   @apply transition-all duration-300 ease-out;
 }
 
+.logo-word::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  background: linear-gradient(to right, #ff1a8c, #b84dff, #00b3ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  filter: blur(14px);
+  opacity: 0.9;
+}
+
+.logo-word {
+  -webkit-text-stroke: 0.6px rgba(255, 255, 255, 0.2);
+}
+
 .group:hover .logo-word {
-  @apply brightness-125 tracking-[0.42em];
   text-shadow: 0 0 25px rgba(139, 92, 246, 0.35);
+  @apply brightness-150 tracking-[0.42em];
 }

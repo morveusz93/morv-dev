@@ -7,7 +7,9 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b bg-background/60 backdrop-blur">
       <Container className="flex items-center justify-between py-4">
         <a href="#" className="group select-none">
-          <span className={`logo-word ${monoton.className}`}>MORV</span>
+          <span className={`logo-word ${monoton.className}`} data-text="MORV">
+            morv
+          </span>
         </a>
 
         <nav className="flex items-center gap-1 sm:gap-2">
