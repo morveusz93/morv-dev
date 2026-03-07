@@ -1,16 +1,17 @@
 import { monoton } from "@/lib/fonts";
 import { Container } from "../layout/Container";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b bg-background/60 backdrop-blur">
       <Container className="flex items-center justify-between py-4">
-        <a href="#" className="group select-none">
+        <Link href="/" className="group select-none">
           <span className={`logo-word ${monoton.className}`} data-text="MORV">
             morv
           </span>
-        </a>
+        </Link>
 
         <nav className="flex items-center md:gap-2">
           <Button variant="ghost" asChild>
