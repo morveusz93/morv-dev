@@ -1,3 +1,5 @@
+"use client";
+
 import { monoton } from "@/lib/fonts";
 import { Container } from "../layout/Container";
 import { Button } from "../ui/button";
@@ -7,7 +9,11 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b bg-background/60 backdrop-blur">
       <Container className="flex items-center justify-between py-4">
-        <Link href="/" className="group select-none">
+        <Link
+          href="/"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="group select-none"
+        >
           <span className={`logo-word ${monoton.className}`} data-text="MORV">
             morv
           </span>
