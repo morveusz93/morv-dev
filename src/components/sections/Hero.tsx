@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "../ui/button";
 import { EMAIL } from "./Contact";
 
@@ -28,13 +29,17 @@ export function Hero() {
           w stabilne produkty.
         </p>
 
-        {/* IMAGE NA MOBILE */}
+        {/* IMAGE MOBILE */}
         <div className="lg:hidden relative">
           <div className="overflow-hidden rounded-2xl border bg-card shadow-xl">
-            <img
+            <Image
               src="/images/hero-img.jpg"
               alt="Programowanie strony internetowej"
-              className="h-56 w-full object-cover"
+              width={1600}
+              height={1000}
+              priority
+              sizes="100vw"
+              className="h-56 sm:h-72 w-full object-cover"
             />
           </div>
 
@@ -65,12 +70,16 @@ export function Hero() {
         </div>
       </div>
 
-      {/* IMAGE NA DESKTOP */}
+      {/* IMAGE DESKTOP */}
       <div className="relative hidden lg:block">
         <div className="overflow-hidden rounded-2xl border bg-card shadow-xl">
-          <img
+          <Image
             src="/images/hero-img.jpg"
             alt="Programowanie strony internetowej"
+            width={1600}
+            height={1000}
+            priority
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="w-full object-cover"
           />
         </div>
