@@ -10,7 +10,7 @@ import { Button } from "../ui/button";
 
 const NAV_ITEMS = [
   { label: "Usługi", href: "#services" },
-  { label: "Stack", href: "#stack" },
+  { label: "Technologie", href: "#stack" },
   { label: "Kontakt", href: "#contact" },
 ];
 
