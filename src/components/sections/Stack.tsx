@@ -1,262 +1,138 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Badge } from "../ui/badge";
+import { FaPython, FaReact, FaDocker, FaGitAlt, FaLinux } from "react-icons/fa";
+import {
+  SiCelery,
+  SiDjango,
+  SiFastapi,
+  SiGitlab,
+  SiKubernetes,
+  SiNextdotjs,
+  SiNginx,
+  SiOpenai,
+  SiOpenapiinitiative,
+  SiPostgresql,
+  SiRedis,
+  SiTailwindcss,
+  SiPrometheus,
+  SiGrafana,
+  SiMongodb,
+  SiMysql,
+  SiElasticsearch,
+} from "react-icons/si";
+
+import { GlowCard } from "../ui/GlowCard";
 import { Section } from "./Section";
 
-type Group = {
-  title: string;
-  subtitle?: string;
-  items: string[];
-};
-
-const groups: Group[] = [
+const techStack = [
   {
-    title: "Frontend",
-    subtitle: "UI, performance, SEO",
+    category: "Backend",
     items: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "shadcn/ui",
-      "Lighthouse",
-      "Core Web Vitals",
-      "optymalizacja SEO",
-      "Responsive Design",
+      { icon: FaPython, name: "Python" },
+      { icon: SiFastapi, name: "FastAPI" },
+      { icon: SiDjango, name: "Django" },
+      { icon: SiCelery, name: "Celery" },
+      { icon: SiOpenapiinitiative, name: "OpenAPI" },
     ],
   },
   {
-    title: "Backend",
-    subtitle: "API, skrypty, taski",
+    category: "Frontend",
     items: [
-      "Python",
-      "Rust",
-      "Node.js",
-      "FastAPI",
-      "Django",
-      "Django REST Framework",
-      "Flask",
-      "Gunicorn",
-      "Uvicorn",
-      "Celery",
-      "AsyncIO",
-      "REST API",
-      "OAuth2",
+      { icon: FaReact, name: "React" },
+      { icon: SiNextdotjs, name: "Next.js" },
+      { icon: SiTailwindcss, name: "Tailwind" },
     ],
   },
   {
-    title: "AI / Automatyzacja",
-    subtitle: "LLM, integracje, realne use-case’y",
+    category: "Bazy i dane",
     items: [
-      "LLM (OpenAI, GPT)",
-      "Prompt engineering",
-      "Integracja API modeli językowych",
-      "Automatyzacja procesów",
-      "Generowanie treści",
-      "Chatboty",
-      "Asystenci AI",
-      "Przetwarzanie tekstu (NLP)",
-      "Ekstrakcja danych z tekstu",
-      "Klasyfikacja treści",
-      "Podsumowania",
-      "Embeddings",
-      "Integracja AI z backendem",
-      "AI w produktach webowych",
+      { icon: SiPostgresql, name: "PostgreSQL" },
+      { icon: SiMysql, name: "MySQL" },
+      { icon: SiMongodb, name: "MongoDB" },
+      { icon: SiRedis, name: "Redis" },
+      { icon: SiElasticsearch, name: "Elasticsearch" },
     ],
   },
   {
-    title: "Bazy danych",
-    subtitle: "SQL, cache, wyszukiwanie",
+    category: "DevOps / infrastruktura",
     items: [
-      "PostgreSQL",
-      "MariaDB",
-      "MySQL",
-      "MS SQL",
-      "Redis",
-      "SQLite",
-      "Indeksy SQL",
-      "Optymalizacja zapytań",
-      "Migracje schematu",
-      "Transakcje",
-      "Elasticsearch",
+      { icon: FaDocker, name: "Docker" },
+      { icon: SiKubernetes, name: "Kubernetes" },
+      { icon: SiNginx, name: "NGINX" },
+      { icon: FaGitAlt, name: "Git" },
+      { icon: SiGitlab, name: "GitLab CI" },
+      { icon: FaLinux, name: "Linux" },
     ],
   },
   {
-    title: "Infra / DevOps",
-    subtitle: "kontenery, deploy, środowiska",
+    category: "Integracje",
     items: [
-      "Docker",
-      "Kubernetes",
-      "Helm",
-      "CI/CD",
-      "GitLab CI",
-      "Multi-stage builds",
-      "Linux",
-      "Nginx",
-      "Load balancing",
-      "Secrets management",
-      "API gateway",
+      { icon: SiOpenai, name: "OpenAI" },
+      { icon: SiOpenapiinitiative, name: "REST API" },
+      { icon: SiOpenapiinitiative, name: "Webhooks" },
+      { icon: SiOpenapiinitiative, name: "OpenAPI" },
     ],
   },
   {
-    title: "Observability",
-    subtitle: "monitoring, logi, tracing",
+    category: "Monitoring",
     items: [
-      "Sentry",
-      "OpenTelemetry",
-      "Jaeger",
-      "Prometheus",
-      "Grafana",
-      "Metrics",
-      "Alerting",
-      "Error tracking",
-      "Performance monitoring",
-    ],
-  },
-  {
-    title: "Testing & Quality",
-    subtitle: "testy, jakość, stabilność",
-    items: [
-      "pytest",
-      "unittest",
-      "Testy jednostkowe",
-      "Testy integracyjne",
-      "Testy API",
-      "Coverage",
-      "Mockowanie",
-      "Contract testing",
-      "Static typing",
-      "Code review",
-    ],
-  },
-  {
-    title: "Tooling",
-    subtitle: "tempo pracy i porządek",
-    items: [
-      "uv",
-      "pip",
-      "poetry",
-      "ruff",
-      "black",
-      "isort",
-      "mypy",
-      "pre-commit",
-      "Makefile",
-      "Shell scripting",
-      "Bash",
-      "Zsh",
-    ],
-  },
-  {
-    title: "Architektura",
-    subtitle: "struktura i decyzje",
-    items: [
-      "Mikroserwisy",
-      "Modularny backend",
-      "Architektura monolityczna",
-      "Clean Architecture",
-      "Domain Driven Design",
-      "Separacja odpowiedzialności",
-      "Feature flags",
-      "Backward compatibility",
-    ],
-  },
-  {
-    title: "Proces & Współpraca",
-    subtitle: "praca zespołowa",
-    items: [
-      "Git",
-      "GitFlow",
-      "Code review",
-      "Pull requesty",
-      "Praca zespołowa",
-      "Dokumentacja techniczna",
-      "Debugowanie",
-      "Utrzymanie legacy code",
+      { icon: SiPrometheus, name: "Prometheus" },
+      { icon: SiGrafana, name: "Grafana" },
     ],
   },
 ];
 
-const container = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.06 } },
-};
-
-const item = {
-  hidden: { opacity: 0, y: 10 },
-  show: { opacity: 1, y: 0 },
-};
-
 export function Stack() {
   return (
-    <Section id="stack" className="pt-0">
-      <h2 className="text-2xl font-semibold tracking-tight">Tech stack</h2>
-      <p className="mt-2 max-w-2xl text-muted-foreground">
-        Sprawdzony stack, większość z tych narzędzi używam na codzień w
-        produkcyjnych projektach. Pozwala skupić się na wydajności,
-        skalowalności i bezproblemowym utrzymaniu.
-      </p>
+    <Section id="stack">
+      <div className="relative overflow-hidden rounded-[2rem] border border-border/50 bg-background/60 px-6 py-16 backdrop-blur-xl">
+        <div className="relative mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl font-semibold sm:text-4xl">
+            Nieważne jakich narzędzi używasz, liczy się to, co potrafisz nimi
+            osiągnąć.
+          </h2>
+          <p className="mt-4 text-muted-foreground">
+            Wybieram technologie pod problem — tak, żeby dowieźć wynik szybko i
+            bez zbędnej komplikacji.
+          </p>
+        </div>
 
-      <motion.div
-        className="mt-8 grid gap-4 sm:gap-6 md:grid-cols-2"
-        variants={container}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, margin: "-80px" }}
-      >
-        {groups.map((g) => (
-          <motion.div
-            key={g.title}
-            variants={item}
-            className={[
-              "group relative overflow-hidden rounded-3xl border",
-              "bg-background/40 md:backdrop-blur",
-              "p-4 sm:p-5",
-              "transition",
-              "hover:border-border/80 hover:bg-muted/20",
-            ].join(" ")}
-          >
-            {/* subtle shine */}
-            <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <div className="absolute -top-20 -left-20 h-56 w-56 rounded-full bg-fuchsia-500/10 blur-3xl" />
-              <div className="absolute -bottom-20 -right-20 h-56 w-56 rounded-full bg-blue-500/10 blur-3xl" />
-            </div>
-
-            <div className="relative">
-              <div className="flex items-baseline justify-between gap-3">
-                <div>
-                  <div className="text-sm font-semibold">{g.title}</div>
-                  {g.subtitle ? (
-                    <div className="mt-1 text-xs text-muted-foreground">
-                      {g.subtitle}
-                    </div>
-                  ) : null}
+        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {techStack.map((group, index) => (
+            <motion.div
+              key={group.category}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.06 }}
+              viewport={{ once: true }}
+              className="h-full"
+            >
+              <GlowCard className="h-full p-6">
+                <div className="text-lg font-semibold tracking-tight">
+                  {group.category}
                 </div>
-              </div>
 
-              <div className="mt-4 flex flex-wrap gap-2">
-                {g.items.map((t) => (
-                  <Badge
-                    key={t}
-                    variant="outline"
-                    className={[
-                      "relative px-3 py-1",
-                      "border-border/40 bg-background/60 md:bg-background/40 md:backdrop-blur",
-                      "transition",
-                      "hover:-translate-y-[1px] hover:scale-[1.02]",
-                      "hover:border-border/70 hover:bg-muted/30",
-                      "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/40",
-                    ].join(" ")}
-                  >
-                    {t}
-                  </Badge>
-                ))}
-              </div>
-            </div>
-          </motion.div>
-        ))}
-      </motion.div>
+                <div className="mt-4 grid grid-cols-2 gap-3 auto-rows-fr">
+                  {group.items.map((item) => {
+                    const Icon = item.icon;
+
+                    return (
+                      <div
+                        key={item.name}
+                        className="group flex h-full items-center gap-2 rounded-xl border border-border/50 bg-background/50 px-3 py-2 transition duration-200 hover:-translate-y-0.5 hover:border-border hover:bg-background"
+                      >
+                        <Icon className="h-4 w-4 shrink-0 text-foreground/90 transition duration-200 group-hover:scale-110" />
+                        <span className="text-sm font-medium">{item.name}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </GlowCard>
+            </motion.div>
+          ))}
+        </div>
+      </div>
     </Section>
   );
 }
