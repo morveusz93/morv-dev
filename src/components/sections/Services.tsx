@@ -119,7 +119,7 @@ export function Services() {
                   ))}
                 </ul>
 
-                <div className="mt-6 pt-4 border-t border-border/40">
+                <div className="mt-auto pt-6 border-t border-border/40">
                   <span className="text-sm font-semibold text-foreground/80">
                     {service.price}
                   </span>
