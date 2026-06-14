@@ -7,8 +7,11 @@ export function Hero() {
     <section className="grid gap-12 py-20 lg:grid-cols-2 lg:items-center">
       <div className="space-y-6">
         <div className="inline-flex items-center gap-2 rounded-full border bg-card/40 px-3 py-1 text-sm text-muted-foreground">
-          <span className="h-2 w-2 rounded-full bg-emerald-500" />
-          Od pomysłu do działającej aplikacji
+          <span className="relative flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+          </span>
+          Dostępny · przyjmuję zlecenia
         </div>
 
         <h1 className="text-balance text-5xl font-semibold tracking-tight sm:text-6xl">

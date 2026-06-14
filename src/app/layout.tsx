@@ -4,18 +4,25 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://morv.dev"),
   title: {
-    default: "Morv | Strony internetowe dla firm",
+    default: "Morv | Strony internetowe i backend dla firm",
     template: "%s | Morv",
   },
   description:
-    "Projektuję szybkie i skuteczne strony internetowe dla małych firm. Landing page, strony firmowe, modernizacja i SEO.",
+    "Programista full-stack (Python, Next.js, DevOps). Tworzę strony firmowe, aplikacje backendowe i automatyzacje dla małych i średnich firm.",
   openGraph: {
     type: "website",
     locale: "pl_PL",
-    title: "Morv | Strony internetowe dla firm",
-    description: "Profesjonalna strona w zasięgu Twojej ręki.",
+    title: "Morv | Strony internetowe i backend dla firm",
+    description:
+      "Strony firmowe, integracje, automatyzacje i małe aplikacje webowe. Backend Python · Next.js · DevOps.",
     url: "https://morv.dev",
     siteName: "Morv",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Morv | Strony internetowe i backend dla firm",
+    description:
+      "Strony firmowe, integracje, automatyzacje i małe aplikacje webowe. Backend Python · Next.js · DevOps.",
   },
   icons: {
     icon: [
@@ -28,14 +35,43 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Morv",
+  url: "https://morv.dev",
+  description:
+    "Tworzę strony firmowe, aplikacje backendowe i automatyzacje dla małych i średnich firm. Python, Next.js, DevOps.",
+  founder: {
+    "@type": "Person",
+    name: "Mateusz Portka",
+    jobTitle: "Full-stack Developer",
+    knowsAbout: ["Python", "FastAPI", "Django", "Next.js", "Docker", "PostgreSQL"],
+    sameAs: ["https://www.linkedin.com/in/mateusz-portka-552b18206"],
+  },
+  areaServed: "PL",
+  serviceType: [
+    "Strony internetowe",
+    "Integracje API",
+    "Automatyzacje",
+    "Aplikacje webowe",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+    <html lang="pl">
+      <body className="antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

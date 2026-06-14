@@ -9,6 +9,7 @@ const services = [
     icon: Globe,
     label: "WEB",
     title: "Strony internetowe",
+    price: "od 2 000 zł",
     description:
       "Strony firmowe i landing page’e przygotowane z naciskiem na czytelność, szybkość i sensowną strukturę.",
     points: [
@@ -22,6 +23,7 @@ const services = [
     icon: Link2,
     label: "INTEGRACJE",
     title: "Integracje",
+    price: "od 800 zł",
     description:
       "Łączenie strony lub aplikacji z zewnętrznymi usługami, żeby dane przepływały bez ręcznego przepisywania.",
     points: [
@@ -35,6 +37,7 @@ const services = [
     icon: Settings2,
     label: "AUTOMATYZACJE",
     title: "Automatyzacje i backend",
+    price: "od 2 500 zł",
     description:
       "Skrypty, procesy i zaplecze aplikacji, które porządkują powtarzalną pracę i przenoszą logikę tam, gdzie jej miejsce.",
     points: [
@@ -48,6 +51,7 @@ const services = [
     icon: Blocks,
     label: "APP",
     title: "Małe aplikacje webowe",
+    price: "od 4 000 zł",
     description:
       "Proste narzędzia webowe do obsługi konkretnego procesu: panel, formularz, generator, wewnętrzny system.",
     points: [
@@ -114,6 +118,12 @@ export function Services() {
                     </li>
                   ))}
                 </ul>
+
+                <div className="mt-6 pt-4 border-t border-border/40">
+                  <span className="text-sm font-semibold text-foreground/80">
+                    {service.price}
+                  </span>
+                </div>
               </div>
             </GlowCard>
           );

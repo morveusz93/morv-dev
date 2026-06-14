@@ -1,16 +1,18 @@
+import { Section } from "./Section";
+
 export function SeoSection() {
   return (
-    <section className="section-y">
-      <div className="container-x">
-        <h2 className="text-2xl font-semibold">
-          Strony internetowe dla małych i średnich firm
-        </h2>
-        <p className="mt-2 text-muted-foreground max-w-3xl">
-          Projektuję nowoczesne strony internetowe dla firm usługowych i
-          lokalnych. Skupiam się na szybkości, SEO i jasnym wezwaniu do
-          kontaktu.
-        </p>
-      </div>
-    </section>
+    <Section>
+      <h2 className="text-2xl font-semibold">
+        Programista freelancer — strony, backend i automatyzacje
+      </h2>
+      <p className="mt-3 max-w-3xl text-muted-foreground leading-relaxed">
+        Specjalizuję się w tworzeniu stron firmowych i landing page&apos;ów dla
+        małych i średnich firm, integracji z zewnętrznymi API oraz pisaniu
+        backendów w Pythonie (FastAPI, Django). Jeśli szukasz programisty
+        full-stack lub freelancera do projektu webowego — napisz, a wrócę z
+        konkretną propozycją.
+      </p>
+    </Section>
   );
 }
