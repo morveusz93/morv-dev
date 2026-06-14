@@ -21,6 +21,7 @@ import {
   SiMysql,
   SiElasticsearch,
 } from "react-icons/si";
+import { TbApi, TbWebhook } from "react-icons/tb";
 
 import { GlowCard } from "../ui/GlowCard";
 import { Section } from "./Section";
@@ -69,8 +70,8 @@ const techStack = [
     category: "Integracje",
     items: [
       { icon: SiOpenai, name: "OpenAI" },
-      { icon: SiOpenapiinitiative, name: "REST API" },
-      { icon: SiOpenapiinitiative, name: "Webhooks" },
+      { icon: TbApi, name: "REST API" },
+      { icon: TbWebhook, name: "Webhooks" },
       { icon: SiOpenapiinitiative, name: "OpenAPI" },
     ],
   },

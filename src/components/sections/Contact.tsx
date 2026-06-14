@@ -22,47 +22,24 @@ export function Contact() {
           </div>
 
           <div className="flex flex-wrap gap-3">
-            <div className="flex flex-wrap gap-3">
-              <Button
-                size="lg"
-                asChild
-                className="
-      relative overflow-hidden
-      bg-linear-to-r from-[#ff1a8c] via-[#b84dff] to-[#00b3ff]
-      text-white
-      shadow-lg shadow-fuchsia-500/20
-      transition-all
-      hover:scale-[1.02]
-      hover:shadow-xl hover:shadow-fuchsia-500/40
-      active:scale-[0.99]
-    "
-              >
-                <a href={`mailto:${EMAIL}`}>Napisz maila</a>
-              </Button>
+            <Button
+              size="lg"
+              asChild
+              className="relative overflow-hidden bg-linear-to-r from-[#ff1a8c] via-[#b84dff] to-[#00b3ff] text-white shadow-lg shadow-fuchsia-500/20 transition-all hover:scale-[1.02] hover:shadow-xl hover:shadow-fuchsia-500/40 active:scale-[0.99]"
+            >
+              <a href={`mailto:${EMAIL}`}>Napisz maila</a>
+            </Button>
 
-              <Button
-                size="lg"
-                variant="outline"
-                asChild
-                className="
-      transition-all
-      hover:scale-[1.02]
-      hover:bg-card/60
-      hover:shadow-lg
-      hover:ring-1 hover:ring-fuchsia-500/20
-      active:scale-[0.99]
-    "
-              >
-                <a
-                  href={LI}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="link-underline"
-                >
-                  LinkedIn
-                </a>
-              </Button>
-            </div>
+            <Button
+              size="lg"
+              variant="outline"
+              asChild
+              className="transition-all hover:scale-[1.02] hover:bg-card/60 hover:shadow-lg hover:ring-1 hover:ring-fuchsia-500/20 active:scale-[0.99]"
+            >
+              <a href={LI} target="_blank" rel="noreferrer" className="link-underline">
+                LinkedIn
+              </a>
+            </Button>
           </div>
         </div>
 
