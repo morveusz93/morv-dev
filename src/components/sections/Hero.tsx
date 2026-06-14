@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
-import { EMAIL } from "./Contact";
 
 export function Hero() {
   return (
@@ -64,7 +63,7 @@ export function Hero() {
               active:scale-[0.99]
             "
           >
-            <a href={`mailto:${EMAIL}`}>Napisz do mnie</a>
+            <a href="#contact">Napisz do mnie</a>
           </Button>
 
           <Button size="lg" variant="outline" asChild>

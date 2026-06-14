@@ -5,6 +5,8 @@ import { Stack } from "@/components/sections/Stack";
 import { Footer } from "@/components/sections/Footer";
 import { Header } from "@/components/sections/Header";
 import { Divider } from "@/components/ui/Divider";
+import { About } from "@/components/sections/About";
+import { HowIWork } from "@/components/sections/HowIWork";
 import { Contact } from "@/components/sections/Contact";
 import { SeoSection } from "@/components/sections/seo";
 
@@ -19,7 +21,15 @@ export default function Home() {
 
       <Divider />
 
+      <About />
+
+      <Divider />
+
       <Services />
+
+      <Divider />
+
+      <HowIWork />
 
       <Divider />
 
