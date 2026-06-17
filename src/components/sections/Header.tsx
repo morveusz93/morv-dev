@@ -9,6 +9,7 @@ import { Container } from "../layout/Container";
 import { Button } from "../ui/button";
 
 const NAV_ITEMS = [
+  { label: "O mnie", href: "#about" },
   { label: "Usługi", href: "#services" },
   { label: "Technologie", href: "#stack" },
   { label: "Kontakt", href: "#contact" },
