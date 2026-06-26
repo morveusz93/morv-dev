@@ -19,9 +19,10 @@ export function About() {
           <div className="space-y-4 text-base leading-7 text-muted-foreground sm:text-lg">
             <p>
               Programuję komercyjnie od 2022 roku. Przez ostatnie lata
-              pracowałem przy dużych serwisach newsowych —{" "}
+              pracowałem przy serwisach z czołówki polskiego internetu —{" "}
               <span className="font-medium text-foreground/80">
-                se.pl, eska.pl, muratordom.pl
+                jednych z największych polskich portali informacyjnych i
+                rozrywkowych
               </span>{" "}
               — jako programista full-stack z naciskiem na backend. Pełnię też
               funkcję Tech Leada kilkuosobowego zespołu programistów.
