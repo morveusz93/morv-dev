@@ -26,6 +26,10 @@ export default function Home() {
 
       <Divider />
 
+      <Projects />
+
+      <Divider />
+
       <Services />
 
       <Divider />
@@ -35,10 +39,6 @@ export default function Home() {
       <Divider />
 
       <Stack />
-
-      <Divider />
-
-      <Projects />
 
       <Divider />
 
