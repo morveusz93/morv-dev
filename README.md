@@ -1,65 +1,26 @@
-# Morv Landing
+# morv-dev
 
-A fast, conversion-focused landing page built with Next.js.  
-Designed to test SEO, visibility, and real user interest — not to be a design playground.
+Source code for [morv.dev](https://morv.dev) — a business landing page for B2B freelance services.
 
----
+## Stack
 
-## Tech Stack
-
-- Next.js (App Router)
-- TypeScript
-- Tailwind CSS
-- shadcn/ui
-
----
+- **Next.js** (App Router) · TypeScript
+- **Tailwind CSS** · shadcn/ui · Framer Motion
+- **Resend** — contact form email delivery
+- **Vercel Analytics**
 
 ## Features
 
-- Single-page landing (hero → footer)
-- Clear CTA and service sections
-- Native SEO setup (metadata, Open Graph)
-- `sitemap.xml` and `robots.txt`
-- Responsive, mobile-first layout
-- Optimized for performance and Core Web Vitals
+- Single-page layout: hero → services → process → contact
+- Native SEO (metadata, Open Graph, sitemap, robots.txt)
+- Responsive, mobile-first
+- Contact form with server-side email via Resend
 
----
-
-## SEO
-
-SEO is handled natively via Next.js:
-
-- Global metadata in `app/layout.tsx`
-- Page-level metadata in `app/page.tsx`
-- Automatic sitemap and robots generation
-
-Ready for Google Search Console.
-
----
-
-## Getting Started
+## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-App runs at:
-
-http://localhost:3000
-
-## Deployment
-
-Optimized for deployment on Vercel, but works with any Next.js-compatible hosting.
-
-Case studies and further content will be added after the initial production release.
-
-## Status
-
-MVP / Test version
-
-Hero, CTA, and structure are intentionally frozen to collect real data before iteration.
-
-## Author
-
-Morv (DreamSoft)
+Requires `.env.local` with `RESEND_API_KEY`.
