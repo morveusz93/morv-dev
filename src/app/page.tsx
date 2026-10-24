@@ -8,6 +8,7 @@ import { Divider } from "@/components/ui/Divider";
 import { About } from "@/components/sections/About";
 import { HowIWork } from "@/components/sections/HowIWork";
 import { Contact } from "@/components/sections/Contact";
+import { Projects } from "@/components/sections/Projects";
 import { SeoSection } from "@/components/sections/seo";
 
 export default function Home() {
@@ -34,6 +35,10 @@ export default function Home() {
       <Divider />
 
       <Stack />
+
+      <Divider />
+
+      <Projects />
 
       <Divider />
 
