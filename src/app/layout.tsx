@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://morv.dev"),
   title: {
-    default: "Mateusz | Python backend i aplikacje webowe",
+    default: "Morv | Mateusz Portka",
     template: "%s | morv.dev",
   },
   description:
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pl_PL",
-    title: "Mateusz | Python backend i aplikacje webowe",
+    title: "Morv | Mateusz Portka",
     description:
       "Python backend developer i Tech Lead. Buduję aplikacje webowe, API i automatyzacje, które działają pod dużym ruchem. FastAPI · Next.js · Kubernetes.",
     url: "https://morv.dev",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mateusz | Python backend i aplikacje webowe",
+    title: "Morv | Mateusz Portka",
     description:
       "Python backend developer i Tech Lead. Buduję aplikacje webowe, API i automatyzacje, które działają pod dużym ruchem. FastAPI · Next.js · Kubernetes.",
   },
