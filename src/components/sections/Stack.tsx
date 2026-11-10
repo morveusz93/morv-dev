@@ -72,7 +72,6 @@ const techStack = [
       { icon: SiOpenai, name: "OpenAI" },
       { icon: TbApi, name: "REST API" },
       { icon: TbWebhook, name: "Webhooks" },
-      { icon: SiOpenapiinitiative, name: "OpenAPI" },
     ],
   },
   {

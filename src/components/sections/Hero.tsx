@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { Button } from "../ui/button";
+import { DeployTerminal } from "./DeployTerminal";
 
 export function Hero() {
   const reduced = useReducedMotion();
@@ -18,7 +18,7 @@ export function Hero() {
   });
 
   return (
-    <section className="grid gap-12 pt-10 pb-16 lg:grid-cols-2 lg:items-center lg:py-20">
+    <section className="grid gap-12 pt-10 pb-16 lg:grid-cols-[1.15fr_1fr] lg:items-center lg:py-20">
       <div className="space-y-5">
         <motion.div
           {...fadeUp(0)}
@@ -28,34 +28,40 @@ export function Hero() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
           </span>
-          Dostępny · przyjmuję zlecenia
+          Otwarty na wybrane projekty
         </motion.div>
 
         <motion.h1
           {...fadeUp(0.1)}
-          className="text-balance text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl"
+          className="text-4xl font-semibold tracking-tight sm:whitespace-nowrap sm:text-5xl lg:text-[2.6rem] xl:text-5xl"
         >
-          Tworzę skalowalne{" "}
           <span className="bg-linear-to-r from-[#ff1a8c] via-[#b84dff] to-[#00b3ff] bg-clip-text text-transparent">
-            aplikacje webowe
+            Morv
           </span>{" "}
-          i{" "}
-          <span className="bg-linear-to-r from-[#00b3ff] via-[#b84dff] to-[#ff1a8c] bg-clip-text text-transparent">
-            narzędzia automatyzujące
-          </span>{" "}
-          pracę.
+          <span className="font-light text-foreground/25">|</span>{" "}
+          Mateusz Portka
         </motion.h1>
+
+        <motion.p
+          {...fadeUp(0.15)}
+          className="font-mono text-base text-foreground/80 sm:text-lg"
+        >
+          Python backend · DevOps · Tech Lead
+        </motion.p>
 
         <motion.p
           {...fadeUp(0.2)}
           className="max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg"
         >
-          Jestem programistą full-stack. Specjalizuję się w backendzie Python,
-          infrastrukturze chmurowej i integracjach AI. Pomagam zamieniać pomysły
-          w stabilne produkty.
+          Od 2022 roku rozwijam systemy dla jednych z największych polskich
+          serwisów internetowych. Po godzinach biorę wybrane projekty:
+          aplikacje, integracje i automatyzacje.
         </motion.p>
 
-        <motion.div {...fadeUp(0.3)} className="flex flex-wrap gap-4 pt-2">
+        <motion.div
+          {...fadeUp(0.3)}
+          className="grid grid-cols-2 gap-3 pt-2 sm:flex sm:flex-wrap sm:gap-4"
+        >
           <Button
             size="lg"
             asChild
@@ -70,33 +76,19 @@ export function Hero() {
               active:scale-[0.99]
             "
           >
-            <a href="#contact">Napisz do mnie</a>
+            <a href="#projects">Zobacz projekty</a>
           </Button>
 
           <Button size="lg" variant="outline" asChild>
-            <a href="#services">Zobacz usługi</a>
+            <a href="#contact">Napisz do mnie</a>
           </Button>
         </motion.div>
       </div>
 
-      {/* IMAGE DESKTOP */}
-      <motion.div
-        {...fadeUp(0.1)}
-        className="relative hidden lg:block"
-      >
-        <div className="overflow-hidden rounded-2xl border bg-card shadow-xl">
-          <Image
-            src="/images/hero-img.jpg"
-            alt="Programowanie strony internetowej"
-            width={1600}
-            height={1000}
-            priority
-            sizes="(max-width: 1024px) 100vw, 50vw"
-            className="w-full object-cover"
-          />
-        </div>
-
-        <div className="absolute -z-10 inset-0 blur-3xl opacity-30 bg-linear-to-r from-[#ff1a8c] via-[#b84dff] to-[#00b3ff]" />
+      {/* TERMINAL */}
+      <motion.div {...fadeUp(0.15)} className="relative hidden sm:block">
+        <DeployTerminal />
+        <div className="absolute -z-10 inset-0 blur-3xl opacity-25 bg-linear-to-r from-[#ff1a8c] via-[#b84dff] to-[#00b3ff]" />
       </motion.div>
     </section>
   );

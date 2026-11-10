@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Morv | Strony internetowe dla firm";
+export const alt = "Mateusz | Python backend i aplikacje webowe";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -49,18 +49,30 @@ export default function Image() {
           }}
         />
 
-        {/* logo */}
+        {/* name */}
         <div
           style={{
-            fontSize: 96,
+            fontSize: 88,
             fontWeight: 800,
-            letterSpacing: "0.2em",
+            letterSpacing: "-0.01em",
             background: "linear-gradient(90deg, #ff1a8c, #b84dff, #00b3ff)",
             backgroundClip: "text",
             color: "transparent",
           }}
         >
-          MORV
+          Mateusz
+        </div>
+
+        {/* role */}
+        <div
+          style={{
+            marginTop: 8,
+            fontSize: 40,
+            fontWeight: 600,
+            color: "hsl(210, 40%, 96%)",
+          }}
+        >
+          Python backend · DevOps · Tech Lead
         </div>
 
         {/* divider */}
@@ -68,21 +80,22 @@ export default function Image() {
           style={{
             width: "120px",
             height: "2px",
-            margin: "20px 0",
+            margin: "28px 0",
             background: "linear-gradient(90deg, #ff1a8c, #b84dff, #00b3ff)",
             borderRadius: "2px",
           }}
         />
 
-        {/* tagline */}
+        {/* stack */}
         <div
           style={{
-            fontSize: 28,
+            fontSize: 26,
             color: "hsl(215, 20%, 65%)",
-            letterSpacing: "0.02em",
+            letterSpacing: "0.04em",
+            fontFamily: "monospace",
           }}
         >
-          Strony internetowe · Backend · Automatyzacje
+          FastAPI · Next.js · Kubernetes · GitLab CI
         </div>
 
         {/* url */}

@@ -5,25 +5,25 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://morv.dev"),
   title: {
-    default: "Morv | Strony internetowe i backend dla firm",
-    template: "%s | Morv",
+    default: "Mateusz | Python backend i aplikacje webowe",
+    template: "%s | morv.dev",
   },
   description:
-    "Programista full-stack (Python, Next.js, DevOps). Tworzę strony firmowe, aplikacje backendowe i automatyzacje dla małych i średnich firm.",
+    "Python backend developer i Tech Lead. Buduję aplikacje webowe, API i automatyzacje, które działają pod dużym ruchem. FastAPI · Next.js · Kubernetes.",
   openGraph: {
     type: "website",
     locale: "pl_PL",
-    title: "Morv | Strony internetowe i backend dla firm",
+    title: "Mateusz | Python backend i aplikacje webowe",
     description:
-      "Strony firmowe, integracje, automatyzacje i małe aplikacje webowe. Backend Python · Next.js · DevOps.",
+      "Python backend developer i Tech Lead. Buduję aplikacje webowe, API i automatyzacje, które działają pod dużym ruchem. FastAPI · Next.js · Kubernetes.",
     url: "https://morv.dev",
-    siteName: "Morv",
+    siteName: "morv.dev",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Morv | Strony internetowe i backend dla firm",
+    title: "Mateusz | Python backend i aplikacje webowe",
     description:
-      "Strony firmowe, integracje, automatyzacje i małe aplikacje webowe. Backend Python · Next.js · DevOps.",
+      "Python backend developer i Tech Lead. Buduję aplikacje webowe, API i automatyzacje, które działają pod dużym ruchem. FastAPI · Next.js · Kubernetes.",
   },
   icons: {
     icon: [
@@ -42,20 +42,23 @@ const jsonLd = {
   name: "Morv",
   url: "https://morv.dev",
   description:
-    "Tworzę strony firmowe, aplikacje backendowe i automatyzacje dla małych i średnich firm. Python, Next.js, DevOps.",
+    "Aplikacje webowe, backend w Pythonie, integracje i automatyzacje. FastAPI, Next.js, Kubernetes.",
   founder: {
     "@type": "Person",
     name: "Mateusz Portka",
-    jobTitle: "Full-stack Developer",
-    knowsAbout: ["Python", "FastAPI", "Django", "Next.js", "Docker", "PostgreSQL"],
-    sameAs: ["https://www.linkedin.com/in/mateusz-portka-552b18206"],
+    jobTitle: "Python Backend Developer & Tech Lead",
+    knowsAbout: ["Python", "FastAPI", "Django", "Next.js", "PostgreSQL", "Docker", "Kubernetes", "GitLab CI"],
+    sameAs: [
+      "https://www.linkedin.com/in/mateusz-portka-552b18206",
+      "https://github.com/morveusz93",
+    ],
   },
   areaServed: "PL",
   serviceType: [
-    "Strony internetowe",
-    "Integracje API",
-    "Automatyzacje",
     "Aplikacje webowe",
+    "Backend i API",
+    "Automatyzacje",
+    "Integracje API",
   ],
 };
 

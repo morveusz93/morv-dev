@@ -3,7 +3,7 @@ import { GlowCard } from "../ui/GlowCard";
 
 const highlights = [
   { label: "W branży od", value: "2022 roku" },
-  { label: "Rola", value: "Full-stack · Tech Lead" },
+  { label: "Rola", value: "Python backend · Tech Lead" },
   { label: "Główny stack", value: "Python · FastAPI · Next.js" },
 ];
 
@@ -18,27 +18,26 @@ export function About() {
 
           <div className="space-y-4 text-base leading-7 text-muted-foreground sm:text-lg">
             <p>
-              Programuję komercyjnie od 2022 roku. Przez ostatnie lata
-              pracowałem przy serwisach z czołówki polskiego internetu —{" "}
+              Od 2022 roku pracuję przy serwisach, z których codziennie
+              korzystają miliony użytkowników. Jestem programistą z naciskiem
+              na backend i{" "}
               <span className="font-medium text-foreground/80">
-                jednych z największych polskich portali informacyjnych i
-                rozrywkowych
-              </span>{" "}
-              — jako programista full-stack z naciskiem na backend. Pełnię też
-              funkcję Tech Leada kilkuosobowego zespołu programistów.
+                Tech Leadem scrumowego zespołu programistów
+              </span>
+              .
             </p>
 
             <p>
-              Specjalizuję się w backendzie Python, infrastrukturze chmurowej
-              i integracjach między systemami. Lubię rozumieć co się dzieje pod
-              spodem — i projektuję tak, żeby przy pierwszym większym ruchu nic
+              Najlepiej czuję się tam, gdzie aplikacja musi działać szybko,
+              stabilnie i pod obciążeniem: API w Pythonie, kolejki, bazy
+              danych, CI/CD i Kubernetes. Lubię rozumieć, co dzieje się pod
+              spodem, i projektuję tak, żeby przy pierwszym większym ruchu nic
               się nie posypało.
             </p>
 
             <p>
-              Morv to mój krok w stronę własnych projektów. Działam zdalnie.
-              Chętnie wezmę się za Python, webdev i automatyzacje — jeśli
-              projekt zahacza o AI, tym lepiej.
+              Poza pracą buduję własne narzędzia, takie jak pipepulse, i
+              realizuję wybrane projekty dla firm.
             </p>
           </div>
         </div>

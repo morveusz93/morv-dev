@@ -9,7 +9,7 @@ export function Footer() {
       <Container className="flex flex-col gap-4 py-8 sm:flex-row sm:items-center sm:justify-between">
         <div className="space-y-1">
           <p className="text-sm text-muted-foreground">
-            Morv — strony internetowe, backend i automatyzacje dla firm.
+            Mateusz · Python backend, aplikacje webowe i automatyzacje.
           </p>
           <a
             href={`mailto:${EMAIL}`}

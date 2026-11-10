@@ -49,11 +49,11 @@ export function Contact() {
       <GlowCard className="p-8">
         <div className="max-w-2xl">
           <h2 className="text-2xl font-semibold tracking-tight">
-            Porozmawiajmy o Twoim projekcie
+            Masz projekt albo propozycję współpracy?
           </h2>
           <p className="mt-2 text-muted-foreground">
-            Landing, backend, automatyzacja, modernizacja istniejącego systemu.
-            Napisz, czego potrzebujesz — wrócę z konkretną odpowiedzią.
+            Napisz kilka zdań o tym, co budujesz. Odpowiadam w ciągu 1–2 dni
+            roboczych.
           </p>
         </div>
 
@@ -113,7 +113,7 @@ export function Contact() {
                 rows={5}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder="Opisz krótko czego szukasz..."
+                placeholder="Co budujesz i w czym mogę pomóc?"
                 className="w-full resize-none rounded-xl border border-border/60 bg-background/50 px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/50 outline-none transition focus:border-fuchsia-500/50 focus:ring-2 focus:ring-fuchsia-500/20"
               />
             </div>
