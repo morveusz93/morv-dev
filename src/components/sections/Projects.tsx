@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ExternalLink, Github } from "lucide-react";
 import { Section } from "./Section";
 import { GlowCard } from "../ui/GlowCard";
+import type { Dict } from "@/lib/i18n";
 
 const stack = [
   "FastAPI",
@@ -13,16 +14,16 @@ const stack = [
   "GitHub Actions",
 ];
 
-export function Projects() {
+export function Projects({ t }: { t: Dict["projects"] }) {
   return (
     <Section id="projects">
       <div className="space-y-10">
         <div className="max-w-2xl space-y-3">
           <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-            Projekty
+            {t.title}
           </h2>
           <p className="text-base leading-7 text-muted-foreground sm:text-lg">
-            Rzeczy, które zbudowałem poza godzinami pracy.
+            {t.subtitle}
           </p>
         </div>
 
@@ -61,10 +62,7 @@ export function Projects() {
             </div>
 
             <p className="mt-4 text-sm leading-6 text-muted-foreground">
-              Dashboard agregujący pipeline'y z wielu projektów GitLab
-              w jednym miejscu. Pokazuje historię, trendy, MTTR i logi
-              failujących jobów bez wychodzenia z widoku. Tryb demo działa
-              bez konfiguracji.
+              {t.pipepulse}
             </p>
 
             <div className="mt-4 flex flex-wrap gap-2">
@@ -90,7 +88,7 @@ export function Projects() {
             <div className="relative overflow-hidden border-t">
               <Image
                 src="/pipepulse-dashboard.png"
-                alt="pipepulse dashboard — widok pipeline'ów z pulsem i rozwiniętym logiem błędu"
+                alt={t.pipepulseAlt}
                 width={2560}
                 height={1640}
                 className="w-full transition duration-300 group-hover:scale-[1.01]"

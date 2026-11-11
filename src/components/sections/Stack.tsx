@@ -25,6 +25,7 @@ import { TbApi, TbWebhook } from "react-icons/tb";
 
 import { GlowCard } from "../ui/GlowCard";
 import { Section } from "./Section";
+import type { Dict } from "@/lib/i18n";
 
 const techStack = [
   {
@@ -83,18 +84,16 @@ const techStack = [
   },
 ];
 
-export function Stack() {
+export function Stack({ t }: { t: Dict["stack"] }) {
   return (
     <Section id="stack">
       <div className="relative overflow-hidden rounded-[2rem] border border-border/50 bg-background/60 px-6 py-16 backdrop-blur-xl">
         <div className="relative mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-semibold sm:text-4xl">
-            Nieważne jakich narzędzi używasz, liczy się to, co potrafisz nimi
-            osiągnąć.
+            {t.title}
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Wybieram technologie pod problem — tak, żeby dowieźć wynik szybko i
-            bez zbędnej komplikacji.
+            {t.subtitle}
           </p>
         </div>
 
@@ -110,7 +109,7 @@ export function Stack() {
             >
               <GlowCard className="h-full p-6">
                 <div className="text-lg font-semibold tracking-tight">
-                  {group.category}
+                  {t.categories[index]}
                 </div>
 
                 <div className="mt-4 grid grid-cols-2 gap-3 auto-rows-fr">

@@ -1,10 +1,10 @@
 import { MetadataRoute } from "next";
+import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const languages = { pl: SITE_URL, en: `${SITE_URL}/en` };
   return [
-    {
-      url: "https://morv.dev",
-      lastModified: new Date(),
-    },
+    { url: SITE_URL, lastModified: new Date(), alternates: { languages } },
+    { url: `${SITE_URL}/en`, lastModified: new Date(), alternates: { languages } },
   ];
 }

@@ -3,8 +3,9 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { Button } from "../ui/button";
 import { DeployTerminal } from "./DeployTerminal";
+import type { Dict } from "@/lib/i18n";
 
-export function Hero() {
+export function Hero({ t }: { t: Dict["hero"] }) {
   const reduced = useReducedMotion();
 
   const fadeUp = (delay: number) => ({
@@ -28,7 +29,7 @@ export function Hero() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
           </span>
-          Otwarty na wybrane projekty
+          {t.badge}
         </motion.div>
 
         <motion.h1
@@ -53,9 +54,7 @@ export function Hero() {
           {...fadeUp(0.2)}
           className="max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg"
         >
-          Od 2022 roku rozwijam systemy dla jednych z największych polskich
-          serwisów internetowych. Po godzinach biorę wybrane projekty:
-          aplikacje, integracje i automatyzacje.
+          {t.lead}
         </motion.p>
 
         <motion.div
@@ -76,18 +75,18 @@ export function Hero() {
               active:scale-[0.99]
             "
           >
-            <a href="#projects">Zobacz projekty</a>
+            <a href="#projects">{t.primary}</a>
           </Button>
 
           <Button size="lg" variant="outline" asChild>
-            <a href="#contact">Napisz do mnie</a>
+            <a href="#contact">{t.secondary}</a>
           </Button>
         </motion.div>
       </div>
 
       {/* TERMINAL */}
       <motion.div {...fadeUp(0.15)} className="relative hidden sm:block">
-        <DeployTerminal />
+        <DeployTerminal label={t.terminalLabel} />
         <div className="absolute -z-10 inset-0 blur-3xl opacity-25 bg-linear-to-r from-[#ff1a8c] via-[#b84dff] to-[#00b3ff]" />
       </motion.div>
     </section>

@@ -2,64 +2,26 @@ import { Blocks, Settings2, Link2 } from "lucide-react";
 
 import { GlowCard } from "../ui/GlowCard";
 import { Section } from "./Section";
+import type { Dict } from "@/lib/i18n";
 
-const services = [
-  {
-    icon: Blocks,
-    label: "APP",
-    title: "Aplikacje webowe",
-    description:
-      "Narzędzia do obsługi konkretnego procesu w firmie, od pierwszej wersji po rozwój po wdrożeniu.",
-    points: [
-      "panele i narzędzia wewnętrzne",
-      "systemy obsługujące konkretny proces",
-      "użytkownicy, role i uprawnienia",
-    ],
-  },
-  {
-    icon: Settings2,
-    label: "BACKEND",
-    title: "Backend i automatyzacje",
-    description:
-      "Logika i przetwarzanie danych tam, gdzie ich miejsce, zamiast ręcznej pracy i arkuszy.",
-    points: [
-      "API i logika backendowa",
-      "przetwarzanie danych i raporty",
-      "zadania cykliczne i powiadomienia",
-      "integracje AI",
-    ],
-  },
-  {
-    icon: Link2,
-    label: "INTEGRACJE",
-    title: "Integracje",
-    description:
-      "Łączenie systemów tak, żeby dane przepływały same, bez przepisywania między narzędziami.",
-    points: [
-      "CRM, płatności, zewnętrzne API",
-      "webhooki i obsługa zdarzeń",
-      "synchronizacja danych między systemami",
-    ],
-  },
-];
+const ICONS = [Blocks, Settings2, Link2];
 
-export function Collaboration() {
+export function Collaboration({ t }: { t: Dict["collaboration"] }) {
   return (
     <Section id="collaboration">
       <div className="max-w-3xl">
         <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-          Współpraca
+          {t.title}
         </h2>
 
         <p className="mt-4 text-base leading-7 text-muted-foreground sm:text-lg">
-          Po godzinach realizuję wybrane projekty dla firm. Najchętniej takie,
-          w których liczy się solidny backend.
+          {t.intro}
         </p>
       </div>
 
       <div className="mt-10 grid gap-5 md:grid-cols-3">
-        {services.map((service) => {
-          const Icon = service.icon;
+        {t.cards.map((service, i) => {
+          const Icon = ICONS[i];
 
           return (
             <GlowCard
@@ -103,20 +65,21 @@ export function Collaboration() {
 
       <div className="mt-10 grid gap-6 md:grid-cols-[1fr_auto] md:items-start">
         <div className="max-w-3xl space-y-4 text-sm leading-6 text-muted-foreground sm:text-base sm:leading-7">
-          <p>Robię też strony firmowe, jeśli są częścią większej całości.</p>
+          <p>{t.note}</p>
           <p>
-            <span className="font-medium text-foreground/80">Jak pracuję:</span>{" "}
-            krótka rozmowa o problemie, konkretna wycena z zakresem, praca w
-            iteracjach z wglądem w postępy, wdrożenie i przekazanie kodu.
+            <span className="font-medium text-foreground/80">
+              {t.howLabel}
+            </span>{" "}
+            {t.how}
           </p>
         </div>
 
         <div className="rounded-xl border border-border/60 bg-card/40 px-5 py-4 text-sm">
           <div className="text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">
-            Wycena
+            {t.pricingLabel}
           </div>
           <div className="mt-1 font-semibold text-foreground/90">
-            po krótkiej rozmowie
+            {t.pricing}
           </div>
         </div>
       </div>

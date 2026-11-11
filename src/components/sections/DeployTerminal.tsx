@@ -137,7 +137,7 @@ const STATIC_LINES: Line[] = SCENARIOS[0].map((s, i) => ({
   text: s.text,
 }));
 
-export function DeployTerminal() {
+export function DeployTerminal({ label }: { label: string }) {
   const reduced = useReducedMotion();
   const [lines, setLines] = useState<Line[]>([]);
   const [typing, setTyping] = useState("");
@@ -218,7 +218,7 @@ export function DeployTerminal() {
       ref={rootRef}
       className="overflow-hidden rounded-2xl border bg-[hsl(222,47%,5%)]/90 shadow-xl backdrop-blur"
       role="img"
-      aria-label="Terminal z pracą backend developera: testy, migracje bazy, wdrożenia na Kubernetes i kilka żartów."
+      aria-label={label}
     >
       <div className="flex items-center gap-2 border-b border-white/5 px-4 py-3">
         <span className="h-3 w-3 rounded-full bg-[#ff1a8c]/70" />
