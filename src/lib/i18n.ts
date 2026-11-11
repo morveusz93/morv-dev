@@ -174,7 +174,7 @@ const pl = {
     metaDescription: "Informacja o przetwarzaniu danych osobowych przez Morv.",
     back: "← Wróć na stronę główną",
     title: "Polityka prywatności",
-    updated: "Ostatnia aktualizacja: czerwiec 2026",
+    updated: "Ostatnia aktualizacja: listopad 2026",
     sections: [
       {
         title: "1. Administrator danych",
@@ -190,15 +190,15 @@ const pl = {
       },
       {
         title: "4. Odbiorcy danych",
-        body: `Wiadomości przesyłane są za pośrednictwem usługi Resend (resend.com), która przetwarza dane jako podmiot przetwarzający. Dane nie są udostępniane innym podmiotom ani przekazywane poza Europejski Obszar Gospodarczy.`,
+        body: `Dane przetwarzają w imieniu Administratora dwaj dostawcy usług: Vercel Inc. (vercel.com) — hosting strony i anonimowe statystyki odwiedzin, oraz Resend (resend.com) — wysyłka wiadomości z formularza kontaktowego. Obie firmy mają siedzibę w USA, więc dane mogą być przekazywane poza Europejski Obszar Gospodarczy. Odbywa się to na podstawie EU-US Data Privacy Framework lub standardowych klauzul umownych zatwierdzonych przez Komisję Europejską. Dane nie są udostępniane innym podmiotom.`,
       },
       {
         title: "5. Twoje prawa",
         body: `Masz prawo dostępu do swoich danych, ich sprostowania, usunięcia, ograniczenia przetwarzania oraz wniesienia sprzeciwu. Możesz też wnieść skargę do Prezesa Urzędu Ochrony Danych Osobowych (uodo.gov.pl). W celu skorzystania z powyższych praw napisz na adres: ${EMAIL}.`,
       },
       {
-        title: "6. Pliki cookie",
-        body: `Strona morv.dev nie używa plików cookie do celów analitycznych ani reklamowych. Nie profilujemy użytkowników i nie korzystamy z narzędzi śledzących.`,
+        title: "6. Pliki cookie i statystyki",
+        body: `Strona morv.dev nie używa plików cookie ani nie zapisuje żadnych danych na Twoim urządzeniu. Statystyki odwiedzin (np. odwiedzane podstrony, kraj, typ urządzenia) zbiera Vercel Web Analytics w formie zagregowanej i anonimowej, bez plików cookie i bez identyfikowania użytkowników. Nie profilujemy użytkowników i nie korzystamy z reklam.`,
       },
     ],
   },
@@ -377,7 +377,7 @@ const en: Dict = {
     metaDescription: "How Morv processes personal data.",
     back: "← Back to home page",
     title: "Privacy policy",
-    updated: "Last updated: June 2026",
+    updated: "Last updated: November 2026",
     sections: [
       {
         title: "1. Data controller",
@@ -393,15 +393,15 @@ const en: Dict = {
       },
       {
         title: "4. Recipients",
-        body: `Messages are delivered via Resend (resend.com), which processes the data as a processor. Data is not shared with any other parties or transferred outside the European Economic Area.`,
+        body: `Two service providers process data on the Controller's behalf: Vercel Inc. (vercel.com) for hosting and anonymous visit statistics, and Resend (resend.com) for delivering contact form messages. Both are based in the USA, so data may be transferred outside the European Economic Area. Such transfers rely on the EU-US Data Privacy Framework or on standard contractual clauses approved by the European Commission. Data is not shared with any other parties.`,
       },
       {
         title: "5. Your rights",
         body: `You have the right to access, rectify and erase your data, to restrict processing and to object. You can also lodge a complaint with the Polish supervisory authority, the President of the Personal Data Protection Office (uodo.gov.pl). To exercise these rights, email ${EMAIL}.`,
       },
       {
-        title: "6. Cookies",
-        body: `morv.dev does not use cookies for analytics or advertising. We do not profile users or use tracking tools.`,
+        title: "6. Cookies and statistics",
+        body: `morv.dev does not use cookies or store any data on your device. Visit statistics (e.g. pages viewed, country, device type) are collected by Vercel Web Analytics in aggregated, anonymous form, without cookies and without identifying users. We do not profile users or show ads.`,
       },
     ],
   },
