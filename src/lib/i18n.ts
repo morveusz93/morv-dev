@@ -32,7 +32,6 @@ const pl = {
     switchLabel: "Read in English",
   },
   hero: {
-    badge: "Otwarty na wybrane projekty",
     lead: "Od 2022 roku rozwijam systemy dla jednych z największych polskich serwisów internetowych. Po godzinach biorę wybrane projekty: aplikacje, integracje i automatyzacje.",
     primary: "Zobacz projekty",
     secondary: "Napisz do mnie",
@@ -237,7 +236,6 @@ const en: Dict = {
     switchLabel: "Czytaj po polsku",
   },
   hero: {
-    badge: "Available for selected contracts",
     lead: "Since 2022 I've been building systems for some of the largest web platforms in Poland. Open to B2B contracts and selected projects: web apps, integrations and automation.",
     primary: "See projects",
     secondary: "Get in touch",

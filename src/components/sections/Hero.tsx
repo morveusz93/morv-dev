@@ -21,19 +21,8 @@ export function Hero({ t }: { t: Dict["hero"] }) {
   return (
     <section className="grid gap-12 pt-10 pb-16 lg:grid-cols-[1.15fr_1fr] lg:items-center lg:py-20">
       <div className="space-y-5">
-        <motion.div
-          {...fadeUp(0)}
-          className="inline-flex items-center gap-2 rounded-full border bg-card/40 px-3 py-1 text-sm text-muted-foreground"
-        >
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
-          </span>
-          {t.badge}
-        </motion.div>
-
         <motion.h1
-          {...fadeUp(0.1)}
+          {...fadeUp(0)}
           className="text-4xl font-semibold tracking-tight sm:whitespace-nowrap sm:text-5xl lg:text-[2.6rem] xl:text-5xl"
         >
           <span className="bg-linear-to-r from-[#ff1a8c] via-[#b84dff] to-[#00b3ff] bg-clip-text text-transparent">
