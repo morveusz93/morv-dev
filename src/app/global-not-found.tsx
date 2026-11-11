@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -19,12 +20,12 @@ export default function GlobalNotFound() {
             Nie ma takiej strony. · This page doesn&apos;t exist.
           </p>
           <div className="flex gap-4 text-sm">
-            <a href="/" className="link-underline">
+            <Link href="/" className="link-underline">
               Strona główna
-            </a>
-            <a href="/en" className="link-underline">
+            </Link>
+            <Link href="/en" className="link-underline">
               Home (EN)
-            </a>
+            </Link>
           </div>
         </main>
       </body>
