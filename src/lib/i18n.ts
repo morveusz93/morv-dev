@@ -41,12 +41,12 @@ const pl = {
   },
   about: {
     title: "Kilka słów o mnie",
-    p1: "Od 2022 roku pracuję przy serwisach, z których codziennie korzystają miliony użytkowników. Jestem programistą z naciskiem na backend i",
-    p1Strong: "Tech Leadem scrumowego zespołu programistów",
-    p2: "Najlepiej czuję się tam, gdzie aplikacja musi działać szybko, stabilnie i pod obciążeniem: API w Pythonie, kolejki, bazy danych, CI/CD i Kubernetes. Lubię rozumieć, co dzieje się pod spodem, i projektuję tak, żeby przy pierwszym większym ruchu nic się nie posypało.",
-    p3: "Poza pracą buduję własne narzędzia, takie jak pipepulse, i realizuję wybrane projekty dla firm.",
+    paragraphs: [
+      "Najlepiej czuję się tam, gdzie aplikacja musi działać szybko, stabilnie i pod obciążeniem: API w Pythonie, kolejki, bazy danych, CI/CD i Kubernetes. Lubię rozumieć, co dzieje się pod spodem, i projektuję tak, żeby przy pierwszym większym ruchu nic się nie posypało.",
+      "Jako Tech Lead pilnuję, żeby kod dało się utrzymać także za rok: wspólne standardy w zespole, code review, które czegoś uczy, i pipeline, który łapie błędy przed produkcją.",
+    ],
     highlights: [
-      { label: "W branży od", value: "2022 roku" },
+      { label: "Forma współpracy", value: "B2B · zdalnie" },
       { label: "Rola", value: "Python backend · Tech Lead" },
       { label: "Główny stack", value: "Python · FastAPI · Next.js" },
     ],
@@ -246,12 +246,12 @@ const en: Dict = {
   },
   about: {
     title: "About me",
-    p1: "Since 2022 I've worked on platforms used by millions of people every day. I'm a backend-focused developer and",
-    p1Strong: "Tech Lead of a Scrum team",
-    p2: "I do my best work where an application has to be fast, stable and hold up under load: Python APIs, queues, databases, CI/CD and Kubernetes. I like to understand what happens under the hood, and I design systems so nothing falls over the first time traffic spikes.",
-    p3: "Outside of work I build my own tools, like pipepulse, and take on selected projects.",
+    paragraphs: [
+      "I do my best work where an application has to be fast, stable and hold up under load: Python APIs, queues, databases, CI/CD and Kubernetes. I like to understand what happens under the hood, and I design systems so nothing falls over the first time traffic spikes.",
+      "As a Tech Lead I make sure the code is still maintainable a year from now: shared standards in the team, code review that actually teaches something, and a pipeline that catches bugs before production.",
+    ],
     highlights: [
-      { label: "In the industry since", value: "2022" },
+      { label: "Work model", value: "B2B · remote" },
       { label: "Role", value: "Python backend · Tech Lead" },
       { label: "Main stack", value: "Python · FastAPI · Next.js" },
     ],

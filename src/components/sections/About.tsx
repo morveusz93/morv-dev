@@ -12,15 +12,9 @@ export function About({ t }: { t: Dict["about"] }) {
           </h2>
 
           <div className="space-y-4 text-base leading-7 text-muted-foreground sm:text-lg">
-            <p>
-              {t.p1}{" "}
-              <span className="font-medium text-foreground/80">
-                {t.p1Strong}
-              </span>
-              .
-            </p>
-            <p>{t.p2}</p>
-            <p>{t.p3}</p>
+            {t.paragraphs.map((text) => (
+              <p key={text}>{text}</p>
+            ))}
           </div>
         </div>
 
