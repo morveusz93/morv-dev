@@ -61,7 +61,7 @@ const pl = {
   experience: {
     title: "Doświadczenie",
     subtitle:
-      "Od 2022 roku w jednym z największych polskich wydawnictw internetowych. Czym zajmuję się na co dzień:",
+      "Na co dzień, w jednym z największych polskich wydawnictw internetowych:",
     items: [
       {
         title: "Tech Lead scrumowego zespołu",
@@ -132,10 +132,8 @@ const pl = {
     pricing: "po krótkiej rozmowie",
   },
   stack: {
-    title:
-      "Nieważne jakich narzędzi używasz, liczy się to, co potrafisz nimi osiągnąć.",
-    subtitle:
-      "Wybieram technologie pod problem — tak, żeby dowieźć wynik szybko i bez zbędnej komplikacji.",
+    title: "Stack",
+    subtitle: "Narzędzia, z którymi pracuję na co dzień.",
     categories: [
       "Backend",
       "Frontend",
@@ -160,10 +158,6 @@ const pl = {
     again: "Wyślij kolejną wiadomość",
     direct: "lub napisz bezpośrednio:",
     error: "Błąd wysyłki. Spróbuj ponownie.",
-  },
-  seo: {
-    title: "Python backend developer i Tech Lead",
-    body: "Buduję aplikacje webowe, API i automatyzacje w Pythonie (FastAPI, Django) z frontendem w Next.js, wdrażane przez GitLab CI na Kubernetes. Na co dzień rozwijam systemy działające pod dużym ruchem i prowadzę zespół programistów. Jeśli szukasz backend developera do projektu albo współpracy B2B, napisz.",
   },
   footer: {
     tagline: "Mateusz · Python backend, aplikacje webowe i automatyzacje.",
@@ -265,7 +259,7 @@ const en: Dict = {
   experience: {
     title: "Experience",
     subtitle:
-      "Since 2022 at one of the largest web publishers in Poland. What I do day to day:",
+      "Day to day, at one of the largest web publishers in Poland:",
     items: [
       {
         title: "Tech Lead of a Scrum team",
@@ -336,9 +330,8 @@ const en: Dict = {
     pricing: "after a short call",
   },
   stack: {
-    title: "Tools matter less than what you build with them.",
-    subtitle:
-      "I pick technologies to fit the problem, so results ship fast and without unnecessary complexity.",
+    title: "Stack",
+    subtitle: "Tools I work with day to day.",
     categories: [
       "Backend",
       "Frontend",
@@ -363,10 +356,6 @@ const en: Dict = {
     again: "Send another message",
     direct: "or email me directly:",
     error: "Something went wrong. Please try again.",
-  },
-  seo: {
-    title: "Python backend developer and Tech Lead",
-    body: "I build web apps, APIs and automation in Python (FastAPI, Django) with Next.js frontends, shipped through GitLab CI to Kubernetes. Day to day I work on systems under heavy traffic and lead a team of developers. If you need a backend developer for a project or a B2B contract, get in touch.",
   },
   footer: {
     tagline: "Mateusz · Python backend, web apps and automation.",

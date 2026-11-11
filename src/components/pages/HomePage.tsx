@@ -9,7 +9,6 @@ import { About } from "@/components/sections/About";
 import { Experience } from "@/components/sections/Experience";
 import { Contact } from "@/components/sections/Contact";
 import { Projects } from "@/components/sections/Projects";
-import { SeoSection } from "@/components/sections/seo";
 import { getDict, type Lang } from "@/lib/i18n";
 
 export function HomePage({ lang }: { lang: Lang }) {
@@ -42,7 +41,6 @@ export function HomePage({ lang }: { lang: Lang }) {
       <Divider />
       <Contact t={t.contact} />
       <Divider />
-      <SeoSection t={t.seo} />
 
       <Footer t={t.footer} privacyHref={t.paths.privacy} />
     </main>
